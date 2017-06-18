@@ -1,0 +1,12 @@
+#painel {
+    width: 50rem;
+    position: fixed;
+    top: calc(50% - 15rem);
+    left: calc(50% - 12rem);
+}
+#forget-password {
+    padding-left: 0.5rem;
+}
+#title {
+    padding-left: 0.5rem;
+}
