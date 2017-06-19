@@ -4,8 +4,10 @@ import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
+import { routing } from './app.routing';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    MaterializeModule
+    MaterializeModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
