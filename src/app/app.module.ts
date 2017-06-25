@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { ScreenUnderConstructionComponent } from './screen-under-construction/screen-under-construction.component';
 import { FormInseminadorComponent } from './form-inseminador/form-inseminador.component';
+import { FormRebanhoComponent } from './form-rebanho/form-rebanho.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FormInseminadorComponent } from './form-inseminador/form-inseminador.co
     MenuComponent,
     HomeComponent,
     ScreenUnderConstructionComponent,
-    FormInseminadorComponent
+    FormInseminadorComponent,
+    FormRebanhoComponent
   ],
   imports: [
     BrowserModule,
