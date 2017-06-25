@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  optionRegisterIsSelect: boolean;
+  optionReportIsSelect: boolean;
+
   constructor() { }
 
   ngOnInit() {

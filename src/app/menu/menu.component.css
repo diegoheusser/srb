@@ -1,0 +1,33 @@
+ul li {
+    color: #009688;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+}
+ul li:hover {
+    background-color: rgba(0,0,0,0.2);
+    
+}
+.sub-list {
+    display: none;
+}
+.root-list {
+    padding-top: 1rem;
+    height: 100%;
+    position: fixed;
+    top: 3.3rem;
+    min-width: 200px;
+    -webkit-box-shadow: 0px 3px 4px 3px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 3px 4px 3px rgba(0,0,0,0.19);
+    box-shadow: 0px 3px 4px 3px rgba(0,0,0,0.19);    
+}
+
+.root-list img {
+    width: 22.5px;
+    margin-right: 1rem;
+    position: relative;
+    top: 6px;
+}
