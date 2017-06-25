@@ -13,6 +13,7 @@ import { ScreenUnderConstructionComponent } from './screen-under-construction/sc
 import { FormInseminadorComponent } from './form-inseminador/form-inseminador.component';
 import { FormRebanhoComponent } from './form-rebanho/form-rebanho.component';
 import { ReportInseminacaoComponent } from './report-inseminacao/report-inseminacao.component';
+import { ReportRebanhoComponent } from './report-rebanho/report-rebanho.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ReportInseminacaoComponent } from './report-inseminacao/report-insemina
     ScreenUnderConstructionComponent,
     FormInseminadorComponent,
     FormRebanhoComponent,
-    ReportInseminacaoComponent
+    ReportInseminacaoComponent,
+    ReportRebanhoComponent
   ],
   imports: [
     BrowserModule,
