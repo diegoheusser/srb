@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ScreenUnderConstructionComponent } from './screen-under-construction/screen-under-construction.component';
 import { FormInseminadorComponent } from './form-inseminador/form-inseminador.component';
 import { FormRebanhoComponent } from './form-rebanho/form-rebanho.component';
+import { ReportInseminacaoComponent } from './report-inseminacao/report-inseminacao.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FormRebanhoComponent } from './form-rebanho/form-rebanho.component';
     HomeComponent,
     ScreenUnderConstructionComponent,
     FormInseminadorComponent,
-    FormRebanhoComponent
+    FormRebanhoComponent,
+    ReportInseminacaoComponent
   ],
   imports: [
     BrowserModule,
