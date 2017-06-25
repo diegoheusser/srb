@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
+import { ScreenUnderConstructionComponent } from './screen-under-construction/screen-under-construction.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     NavbarComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
+    ScreenUnderConstructionComponent
   ],
   imports: [
     BrowserModule,
