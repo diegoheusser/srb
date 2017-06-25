@@ -1,8 +1,10 @@
 <ul class="root-list">
   <li>
-    <img src="/assets/form.svg" alt="form">
-    Cadastros
-    <ul class="sub-list">
+    <div (click)="onClickRegister();">
+      <img src="/assets/form.svg" alt="form">
+      Cadastros
+    </div>
+    <ul class="sub-list" [hidden]="!optionRegisterIsSelected">
       <li><a href="">Cadastro de Bovinos</a></li>
       <li><a href="">Cadastro de Inseminações</a></li>
       <li><a href="">Cadastro de Rebanhos</a></li>
@@ -10,9 +12,11 @@
     </ul>
   </li>
   <li>
-    <img src="/assets/pie-chart.svg" alt="pie chart">
-    Relatórios
-    <ul class="sub-list">
+    <div (click)="onClickReport();">
+      <img src="/assets/pie-chart.svg" alt="pie chart">
+      Relatórios
+    </div>
+    <ul class="sub-list" [hidden]="!optionReportIsSelected">
       <li><a href="">Relatório de Rebanhos</a></li>
       <li><a href="">Relatório de Inseminações</a></li>
     </ul>

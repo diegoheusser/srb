@@ -7,12 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  optionRegisterIsSelect: boolean;
-  optionReportIsSelect: boolean;
+  optionRegisterIsSelected: boolean;
+  optionReportIsSelected: boolean;
 
-  constructor() { }
+  constructor() {
+    this.optionRegisterIsSelected = false;
+    this.optionReportIsSelected = false;
+  }
 
   ngOnInit() {
+  }
+
+  onClickRegister() {
+    this.optionRegisterIsSelected = !this.optionRegisterIsSelected;
+  }
+
+  onClickReport() {
+    this.optionReportIsSelected = !this.optionReportIsSelected;
   }
 
 }
