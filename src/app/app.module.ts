@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { ScreenUnderConstructionComponent } from './screen-under-construction/screen-under-construction.component';
+import { FormInseminadorComponent } from './form-inseminador/form-inseminador.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ScreenUnderConstructionComponent } from './screen-under-construction/sc
     NavbarComponent,
     MenuComponent,
     HomeComponent,
-    ScreenUnderConstructionComponent
+    ScreenUnderConstructionComponent,
+    FormInseminadorComponent
   ],
   imports: [
     BrowserModule,
