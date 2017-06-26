@@ -12,13 +12,15 @@ export class AuthService {
 
   }
 
-  doLogin(user: User) {
+  doLogin(user: User): boolean {
     if(user.username == 'root' && user.password == 'root') {
       localStorage.setItem('srb-user', JSON.stringify(user));
       this.showMenuEmitter.emit(true);
       this.router.navigate(['/']);
+      return true;
     } else {
       this.showMenuEmitter.emit(false);
+      return false;
     }
   }
 

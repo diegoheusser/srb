@@ -1,13 +1,34 @@
 <div id="painel">
   <img src="/assets/logo.png" alt="SRB">
-  <div class="input-field col s12">
-    <input [(ngModel)]="user.username" id="username" type="text" class="validate">
-    <label for="username">Usuário</label>
-  </div>        
-  <div class="input-field col s12">
-    <input [(ngModel)]="user.password" id="password" type="password" class="validate">
-    <label for="password">Senha</label>
-  </div>   
-  <a id="forget-password" class="waves-effect teal-text waves-teal btn-flat app-full">Esqueceu sua senha?</a>
-  <button class="waves-effect waves-light btn app-full" (click)="doLogin();">Entrar</button>
+  <div [hidden]="!login">
+    <div class="input-field col s12">
+      <input [(ngModel)]="user.username" id="username" type="text" [ngClass]="field" (change)="onChange();">
+      <label for="username">Usuário</label>
+    </div>  
+    <div class="input-field col s12">
+      <input [(ngModel)]="user.password" id="password" type="password" [ngClass]="field" (change)="onChange();">
+      <label for="password">Senha</label>
+    </div>   
+    <p [hidden]="field == ''" class="msg-invalid col s12">
+      Usuário ou senha incorretos
+    </p>
+    <a id="forget-password" class="waves-effect teal-text waves-teal btn-flat app-full" (click)="doForget();">Esqueceu sua senha?</a>
+    <button class="waves-effect waves-light btn app-full" (click)="doLogin();">Entrar</button>
+  </div>
+  <div [hidden]="!forget">
+    <div class="input-field col s12">
+      <input id="email" type="email" class="validate" [(ngModel)]="userEmail">
+      <label for="email">E-mail</label>
+    </div> 
+    <p [hidden]="emailValid" class="msg-invalid">
+      E-mail inválido! 
+    </p> 
+    <button class="waves-effect waves-light btn app-full" (click)="doMessage();">Enviar</button>    
+  </div>
+  <div [hidden]="!message">
+    <p>
+      Um E-mail com a informação de recuperação de senha foi para à você!  
+    </p> 
+    <button class="waves-effect waves-light btn app-full" (click)="doBack();">Voltar</button>    
+  </div>  
 </div>

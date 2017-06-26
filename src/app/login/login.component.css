@@ -17,3 +17,7 @@ img {
     margin-left: 50%;
     transform: translateX(-50%); 
 }
+
+.msg-invalid {
+    color: #ef5350;
+}
