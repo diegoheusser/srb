@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class ReportRebanhoComponent implements OnInit {
 
+  tableHidden: boolean = true;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -15,6 +17,10 @@ export class ReportRebanhoComponent implements OnInit {
 
   onCancel() {
     this.router.navigate(['/']);
+  }
+
+  onClick() {
+    this.tableHidden = false;
   }
 
 }
