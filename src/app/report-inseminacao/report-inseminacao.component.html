@@ -1,3 +1,49 @@
-<p>
-  report-inseminacao works!
-</p>
+<h1>Relatório de Inseminações</h1>
+<div class="row">
+  <div class="input-field col s2">
+    <select materialize="material_select">
+      <option value="" disabled selected>Escolha um opção</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <label>Brinco</label>
+  </div>
+  <div class="input-field col s2">
+    <select materialize="material_select">
+      <option value="" disabled selected>Escolha um opção</option>
+      <option value="1">Rebanho 1</option>
+      <option value="2">Rebanho 2</option>
+      <option value="3">Rebanho 3</option>
+    </select>
+    <label>Raça</label>
+  </div> 
+  <div class="input-field col s2">
+    <input materialize="pickadate" format="dd/mm/yyyy" id="report-date" type="date" class="datepicker">
+    <label for="report-date">Data</label>
+  </div>   
+</div>
+<div class="row">
+  <div class="input-field col s3">
+    <select materialize="material_select">
+      <option value="" disabled selected>Escolha um opção</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <label>Veterinário</label>
+  </div>
+  <div class="input-field col s3">
+    <select materialize="material_select">
+      <option value="" disabled selected>Escolha um opção</option>
+      <option value="1">Rebanho 1</option>
+      <option value="2">Rebanho 2</option>
+      <option value="3">Rebanho 3</option>
+    </select>
+    <label>Inseminador</label>
+  </div>  
+</div>
+<div class="row">
+  <button class="waves-effect waves-light btn">Emitir</button>
+  <button class="waves-effect waves-light btn red lighten-1">Cancelar</button>  
+</div>
