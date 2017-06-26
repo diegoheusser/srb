@@ -1,3 +1,32 @@
-<p>
-  form-inseminador works!
-</p>
+<h1>Cadastro de Inseminador</h1>
+<div class="row">
+  <div class="input-field col s6">
+    <input id="inseminador-name" type="text" class="validate">
+    <label for="inseminador-name">Nome</label>
+  </div>  
+</div>
+<div class="row">
+  <div class="input-field col s3">
+    <input id="inseminador-cpf" type="text" class="validate">
+    <label for="inseminador-cpf">CPF</label>
+  </div>
+  <div class="input-field col s3">
+    <input id="inseminador-rg" type="text" class="validate">
+    <label for="inseminador-rg">RG</label>
+  </div>
+</div>
+<div class="row">
+  <p class="col s0.5">Sexo:</p>
+  <p class="col s1.25">
+    <input name="sex" type="radio" id="inseminador-masc" />
+    <label for="inseminador-masc">Masculino</label>
+  </p>
+  <p class="col s1.25">
+    <input name="sex" type="radio" id="inseminador-fem" />
+    <label for="inseminador-fem">Feminino</label>
+  </p>    
+</div>
+<div class="row">
+  <button class="waves-effect waves-light btn">Cadastrar</button>
+  <button class="waves-effect waves-light btn red lighten-1">Cancelar</button>
+</div>
