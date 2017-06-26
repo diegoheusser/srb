@@ -1,13 +1,13 @@
 <div id="painel">
   <img src="/assets/logo.png" alt="SRB">
   <div class="input-field col s12">
-    <input id="username" type="text" class="validate">
+    <input [(ngModel)]="user.username" id="username" type="text" class="validate">
     <label for="username">Usuário</label>
   </div>        
   <div class="input-field col s12">
-    <input id="password" type="password" class="validate">
+    <input [(ngModel)]="user.password" id="password" type="password" class="validate">
     <label for="password">Senha</label>
   </div>   
   <a id="forget-password" class="waves-effect teal-text waves-teal btn-flat app-full">Esqueceu sua senha?</a>
-  <button class="waves-effect waves-light btn app-full" >Entrar</button>
+  <button class="waves-effect waves-light btn app-full" (click)="doLogin();">Entrar</button>
 </div>

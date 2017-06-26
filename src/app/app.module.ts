@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { MaterializeModule } from 'angular2-materialize';
 
@@ -14,6 +15,7 @@ import { FormInseminadorComponent } from './form-inseminador/form-inseminador.co
 import { FormRebanhoComponent } from './form-rebanho/form-rebanho.component';
 import { ReportInseminacaoComponent } from './report-inseminacao/report-inseminacao.component';
 import { ReportRebanhoComponent } from './report-rebanho/report-rebanho.component';
+import { AuthService } from './login/auth.service';
 
 
 @NgModule({
@@ -32,9 +34,10 @@ import { ReportRebanhoComponent } from './report-rebanho/report-rebanho.componen
   imports: [
     BrowserModule,
     MaterializeModule,
+    FormsModule,
     routing
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
