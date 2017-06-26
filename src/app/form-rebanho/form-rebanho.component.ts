@@ -25,4 +25,8 @@ export class FormRebanhoComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
+  onSave() {
+    this.router.navigate(['/cadastrado']);
+  }
+
 }

@@ -17,6 +17,8 @@ import { ReportInseminacaoComponent } from './report-inseminacao/report-insemina
 import { ReportRebanhoComponent } from './report-rebanho/report-rebanho.component';
 import { AuthService } from './login/auth.service';
 import { AuthGuard } from './guards/auth.guard';
+import { CadastradoComponent } from './cadastrado/cadastrado.component';
+import { ImpressoComponent } from './impresso/impresso.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { AuthGuard } from './guards/auth.guard';
     FormInseminadorComponent,
     FormRebanhoComponent,
     ReportInseminacaoComponent,
-    ReportRebanhoComponent
+    ReportRebanhoComponent,
+    CadastradoComponent,
+    ImpressoComponent
   ],
   imports: [
     BrowserModule,

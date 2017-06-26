@@ -17,4 +17,8 @@ export class FormInseminadorComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
+  onSave() {
+    this.router.navigate(['/cadastrado']);
+  }
+
 }

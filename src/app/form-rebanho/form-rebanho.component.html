@@ -49,7 +49,7 @@
   </table>
 </div>
 <div class="row">
-  <button *ngIf="!tableHidden" class="waves-effect waves-light btn" >Cadastrar</button>
+  <button *ngIf="!tableHidden" class="waves-effect waves-light btn" (click)="onSave();">Cadastrar</button>
   <button *ngIf="tableHidden" class="waves-effect waves-light btn" (click)="onClick();">Adicionar Bovinos</button>
   <button class="waves-effect waves-light btn red lighten-1" (click)="onCancel();">Cancelar</button>
 </div>

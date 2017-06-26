@@ -23,4 +23,8 @@ export class ReportInseminacaoComponent implements OnInit {
     this.tableHidden = false;
   }
 
+  onSave() {
+    this.router.navigate(['/impresso']);
+  }
+
 }
