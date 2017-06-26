@@ -4,8 +4,8 @@
       SRB
     </a>
     <ul class="right hide-on-med-and-down">
-      <li>
-        <a class="dropdown-button" data-activates="dropdown-user">
+      <li (click)="onDropdown();">
+        <a class="dropdown-button">
           Usuário
           <i class="material-icons right">arrow_drop_down</i>
         </a>
@@ -13,7 +13,7 @@
     </ul>
   </div>
 </nav>
-<ul id="dropdown-user" class="dropdown-content">
-  <li><a routerLink="screen-under-construction">Configurações</a></li>
-  <li><a routerLink="login">Sair</a></li>
+<ul [hidden]="isDropdown" class="app-dropdown-content">
+  <li (click)="onDropdown();"><a routerLink="screen-under-construction">Configurações</a></li>
+  <li><a (click)="logout();">Sair</a></li>
 </ul>

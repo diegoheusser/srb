@@ -1,3 +1,9 @@
 #dropdown-user {
     margin-top: 4.1rem;
 }
+
+.app-dropdown-content {
+    position: fixed;
+    top: 4.1rem;
+    right: 0rem;
+}

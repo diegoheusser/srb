@@ -8,15 +8,16 @@ import { FormInseminadorComponent } from './form-inseminador/form-inseminador.co
 import { FormRebanhoComponent } from './form-rebanho/form-rebanho.component';
 import { ReportInseminacaoComponent } from './report-inseminacao/report-inseminacao.component';
 import { ReportRebanhoComponent } from './report-rebanho/report-rebanho.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: HomeComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent },
-    { path: 'screen-under-construction', component: ScreenUnderConstructionComponent },
-    { path: 'inseminador/novo', component: FormInseminadorComponent },
-    { path: 'rebanho', component: ReportRebanhoComponent },
-    { path: 'rebanho/novo', component: FormRebanhoComponent },
-    { path: 'inseminacao', component: ReportInseminacaoComponent }
+    { path: 'screen-under-construction', component: ScreenUnderConstructionComponent, canActivate: [AuthGuard] },
+    { path: 'inseminador/novo', component: FormInseminadorComponent, canActivate: [AuthGuard] },
+    { path: 'rebanho', component: ReportRebanhoComponent, canActivate: [AuthGuard] },
+    { path: 'rebanho/novo', component: FormRebanhoComponent, canActivate: [AuthGuard] },
+    { path: 'inseminacao', component: ReportInseminacaoComponent, canActivate: [AuthGuard] }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

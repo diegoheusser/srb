@@ -16,6 +16,7 @@ import { FormRebanhoComponent } from './form-rebanho/form-rebanho.component';
 import { ReportInseminacaoComponent } from './report-inseminacao/report-inseminacao.component';
 import { ReportRebanhoComponent } from './report-rebanho/report-rebanho.component';
 import { AuthService } from './login/auth.service';
+import { AuthGuard } from './guards/auth.guard';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { AuthService } from './login/auth.service';
     FormsModule,
     routing
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
