@@ -5,7 +5,50 @@
     <label for="rebanho-name">Nome do rebanho</label>
   </div>
 </div> 
+<div [hidden]="tableHidden" class="row">
+  <table class="bordered col s12">
+    <thead>
+      <tr>
+        <th>Brinco</th>
+        <th>Raça</th>
+        <th>Sexo</th>
+        <th>Nascimento</th>
+        <th>Observações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>132456</td>
+        <td>Jersey</td>
+        <td>Masculino</td>
+        <td>01/01/2015</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      </tr> 
+      <tr>
+        <td>132457</td>
+        <td>Jersey</td>
+        <td>Masculino</td>
+        <td>01/01/2015</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      </tr> 
+      <tr>
+        <td>132458</td>
+        <td>Jersey</td>
+        <td>Masculino</td>
+        <td>01/01/2015</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      </tr> 
+      <tr>
+        <td>132459</td>
+        <td>Jersey</td>
+        <td>Masculino</td>
+        <td>01/01/2015</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      </tr>                        
+    </tbody>
+  </table>
+</div>
 <div class="row">
-  <button class="waves-effect waves-light btn">Adicionar Bovinos</button>
-  <button class="waves-effect waves-light btn red lighten-1">Cancelar</button>
+  <button class="waves-effect waves-light btn" (click)="onClick();">Adicionar Bovinos</button>
+  <button class="waves-effect waves-light btn red lighten-1" (click)="onCancel();">Cancelar</button>
 </div>

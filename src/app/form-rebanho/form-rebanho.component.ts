@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-rebanho',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormRebanhoComponent implements OnInit {
 
-  constructor() { }
+  tableHidden: boolean = true;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+
+  }
+
+  onClick() {
+    this.tableHidden = false;
+  }
+
+  onCancel() {
+    this.tableHidden = true;
+    this.router.navigate(['/']);
   }
 
 }
